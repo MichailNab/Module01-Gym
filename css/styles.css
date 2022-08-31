@@ -129,7 +129,7 @@ margin-bottom: 58px;
 	position: absolute;
 	width: 990px;
 	height: 812px;
-	left: 600px;
+	left: 688px;
 	top: 164px;
 }
 .banner-link {
@@ -963,7 +963,7 @@ ul.footer_contacts {
    list-style-type: none;
 	align-items: center;
    padding-left: 0;
-
+	gap: 6px;
 }
 .email {
 	position: relative;
