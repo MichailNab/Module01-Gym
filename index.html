@@ -93,7 +93,7 @@
 								<div class="item-marathon-text">
 									<p class="items-dn">марафон</p>
 								</div>
-								<button href="#" class="nearest-events-btn">записаться</button>
+								<button class="nearest-events-btn">записаться</button>
 							</div>
 						</div>
 					</div>
@@ -107,7 +107,7 @@
 								<div class="item-coach-text">
 									<p class="items-dn">вебинар</p>
 								</div>
-								<button href="#" class="nearest-events-btn">записаться</button>
+								<button class="nearest-events-btn">записаться</button>
 							</div>
 						</div>
 					</div>
@@ -121,7 +121,7 @@
 								<div class="item-yoga-text">
 									<p class="items-dn">вебинар</p>
 								</div>
-								<button href="#" class="nearest-events-btn">записаться</button>
+								<button class="nearest-events-btn">записаться</button>
 							</div>
 						</div>
 					</div>
@@ -207,23 +207,30 @@
 				</div>
 			</div>
 		</section>
-		<section>
-			<div class="subscribe">
-				<div class="circle"></div>
-				<div class="subscribe-top">Подпишитесь на рассылку</div>
-				<div class="subscribe-input">
-					<form action="" class="subscribe-input-form">
-						<input type="email" value="Ваш e-mail" class="subscribe-input-inp">
-					</form>
-					<button class="subscript-btn" type="submit">Подписаться</button>
+		<<secton class="mail">
+			<div class="mail__bg">
+				<div class="wrapper-mail">
+					<div class="mail-box">                     
+							<h2 class="mail-box__title">Подпишитесь на рассылку</h2>                      
+						<div class="form">  
+							<form action="#" class="form__body">
+								<div class="agreement">
+									<input id="formEmail" type="text" name="email" class="form__input" data-rule="mail" placeholder="Ваш e-mail" required="">
+									<button class="form__button button-desctop"><span>ПОДПИСАТЬСЯ</span></button>
+								</div>
+								<div class="check">
+									<input type="checkbox" id="01" class="checkbox">
+									<label class="form__label" for="01">Согласен с обработкой<a class="form__link activ" href="https://annblok.ru/workshop" target="_blank"><u>персональных данных</u>
+									</a></label>
+								</div> 
+								<button class="form__button button-mobile"><span>ПОДПИСАТЬСЯ</span></button>
+							</form>                          
+							 <!-- <button class="form__button"><span>ПОДПИСАТЬСЯ</span></button> -->
+						</div>
+					</div>
 				</div>
-				<div class="agreement">
-					<input type="checkbox" id="01" class="checkbox">
-					<label for="01" class="check-text">Согласен с обработкой <a href="https://annblok.ru/workshop"
-							target="_blank" class="check_blank">персональных данных</a></label>
-				</div>
-			</div>
-		</section>
+			</div>              
+		</secton>
 		<section>
 			<div class="container">
 				<div class="about_company">
@@ -259,7 +266,7 @@
 			</div>
 		</section>
 	</main>
-	<footer>
+	<!--<footer>
 		<div class="container">
 			<div class="footer-logo"></div>
 			<ul class="footer-nav">
@@ -287,6 +294,35 @@
 			</div>
 		</div>
 
+	</footer>-->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-box">
+				<div class="footer-nav-box">
+					<div class="footer-logo logo-style"></div>
+					<ul class="footer-nav site-nav">
+						<li><a href="index.html">Мероприятия</a></li>
+						<li><a href="#">Расписание</a></li>
+						<li><a href="#">О компании</a></li>
+					</ul>
+					<a href="mailto:Your email" class="footer-link-info">info@freefit.com</a>
+					<div class="footer-social site-social">
+						<a href="mailto:Your email" class="footer-link-info info-mobile">info@freefit.com</a>
+						<div class="footer-social-mobile">
+							<a href="#" class="footer-social__inst"></a>
+							<a href="#" class="footer-social__fb"></a>
+						</div>
+					</div>
+				</div>
+				<div class="footer-info">
+					<div class="rights">
+						<span>© 2020, Все права защищены</span>
+					</div>
+					<p class="footer-text">Сделано в рамках курса учебной платформы <a href="#"
+							class="footer-link">Annblok</a></p>
+				</div>
+			</div>
+		</div>
 	</footer>
 	<script src="script/Gym.js"></script>
 </body>
