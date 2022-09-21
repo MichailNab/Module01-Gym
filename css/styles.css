@@ -24,6 +24,10 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	border: 0;
+	
+}
+.header-burger {
+	margin-left: -180px;
 }
 .header-nav {
 	display: flex;
@@ -90,6 +94,7 @@ a.social-fb:hover {
 }
 .banner-box {
 	display: flex;
+	position: relative;
 	background-repeat: no-repeat;
 	margin: 0;
 	padding-top: 0;
@@ -106,12 +111,15 @@ a.social-fb:hover {
 	width: 676px;
 	margin-top: 185px
 }
+.baner-cover {
+	margin-left: 94px;
+}
 .text h1 {
 	font-size: 48px;
 	text-transform: uppercase;
 }
 .text h2 {
-	font-weight: 400;
+font-weight: 400;
 font-size: 40px;
 margin-top: 48px;
 padding-left: 13px;
@@ -121,7 +129,6 @@ margin-bottom: 10px;
 font-weight: 400;
 font-size: 18px;
 line-height: 150%;
-padding-left: 92px;
 margin-top: 24px;
 margin-bottom: 58px;
 }
@@ -129,13 +136,12 @@ margin-bottom: 58px;
 	position: absolute;
 	width: 990px;
 	height: 812px;
-	left: 688px;
-	top: 164px;
+	left: 320px;
+	top: 25px;
 }
 .banner-link {
 	background-color: #FBF138;
 	padding: 20px 31px;
-	margin-left: 94px ;
 	text-decoration: none;
 	text-transform: uppercase;
 	text-align: center;
@@ -152,19 +158,19 @@ margin-bottom: 58px;
 }
 .Dn-btn {
 	background-image: url(../images/arrow-dn.svg);
-	width: 52px;
+	background-repeat: no-repeat;
+	width: 55px;
 	height: 55px;
 	position: absolute;
-	margin-top: 780px;
-}
-.nearest-events {
-	margin-top: 160px;
+	margin-bottom: 0px;
+	margin-left: 0;
 }
 .nearest-events-title {
 font-size: 40px;
 font-weight: 700;
 color: #2B3541;
 margin-bottom: 40px;
+padding-top: 100px;
 }
 /*.nearest-events-items {
 	display: flex;
@@ -379,6 +385,22 @@ opacity: 0.6;
     z-index: 1;
     transition: all .5s ease;    
 }
+.item-marathon-plus {
+	position: absolute;
+	width: 100%;
+    display: flex;
+    justify-content: end;
+    bottom: 0;
+    align-items: end;
+	}
+.item-dn-plus {
+	background-image: url(../images/plus.png);
+	background-repeat: no-repeat;
+	padding: 20px 20px;
+	background-color: #2B3541;
+	margin-bottom: 0;
+	background-position: center;
+}
 .training-schedule {
 	margin-top: 160px;
 }
@@ -427,7 +449,6 @@ opacity: 0.6;
 .training-schedule-grid-cover {
 	width: 100%;
 	height: 100%;
-	
 	}
 .funtraning {
 	border: 1px solid rgba(43, 53, 65, 0.5);
@@ -941,6 +962,7 @@ input[data-rule].invalid {
 	background-image: url(../images/aboutcompany.png);
 	width: 581px;
 	height: 336px;
+	background-position: center center;
 }
 .about_company_items {
 	display: flex;
@@ -1217,18 +1239,350 @@ color: #2B3541;
 	display: flex;
 	gap: 16px;
 }
+.futer-link-mobail {
+	display: none;
+}
+/*Modal*/
+.burger {
+	width: 29px;
+	height: 22px;
+	background-image: url(../images/burger\ 1.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+.modal {
+	background-color: #F3F3F3;
+	max-width: 587px;
+	text-align: left;
+	position: absolute;
+	top: -580px;
+	left: 0;
+	right: 0;
+	margin: 10px auto;
+	padding: 20px 30px;
+	box-sizing: border-box;
+	transition: .5s;
+}
+.modal-dn {
+	background-color: #2B3541;
+	opacity: 0.4;
+	width: 587px;
+	height: 135px;
+	position: absolute;
+	margin-left: -30px;
+	margin-top: 0;
+	padding: 20px 0 45px 0;
+	box-sizing: border-box;
+	transition: .5s;
+}
+.modal-top {
+	display: flex;
+	justify-content: space-between;
+}
+.modal-top .header-logo {
+	display: block;
+}
+.modal .header-nav {
+	flex-direction: column;
+	align-items: left;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	}
+	.modal .header-nav li {
+		border-bottom: 1px solid rgba(43, 53, 65, 0.2);
+		padding-bottom: 20px;
+	}
+	.modal .header-nav li:last-child {
+		border-bottom: none;
+	}
+	.modal .header-nav a::after {
+		content: '';
+		width: 18vw;
+		}
+	.modal ul.social {
+		display: flex;
+		list-style-type: none;
+		right: 11px;
+		bottom: 20px;
+		position: absolute;
+		background-repeat: no-repeat;
+		border: none;
+		background-size: contain;
+		}
+	.modal a.social-inst:hover {
+		transform: scale(1);
+	}
+	.modal a.social-fb:hover {
+		transform: scale(1);
+	}
+	.burger-close {
+	width: 20px;
+	height: 19px;
+	background-image: url(../images/modal-close.svg);
+	background-color: transparent;
+	background-size: contain;
+	background-repeat: no-repeat;
+	border: none;
+	position: absolute;
+	right: 10px;
+	cursor: pointer;
+}
+
+
 
 /*Работа с адаптивом*/
 
+@media(max-width: 1200px) {
+	.img-girl {
+		width: 790px;
+		height: 612px;
+		left: 388px;
+	}
+}
+@media(max-width: 1030px) {
+	.container {
+		max-width: 1000px;
+	}
+	.header-nav {
+		margin-left: 5px;
+			gap: 30px;
+	}
+	
+	.box {
+		height: 55vw;
+	}
+	.img-girl {
+		width: 530px;
+		height: 489px;
+		left: 433px;
+	}
+	.text {
+		margin-top: 0;
+	}
+	.text h1 {
+		font-size: 26px;
+		width: 358px;
+		height: 70px;
+		left: 10px;
+		top: 116px;
+	}
+	.text h2 {
+	font-size: 26px;
+	margin-top: 35px;
+	}
+	.text p {
+		font-size: 16px;
+		}
+		.Dn-btn {
+			background-image: url(../images/arrow-dn-resp.svg);
+			min-width: 70px;
+			min-height: 40px;
+			margin-bottom: 0px;
+			margin-left: 0px;
+	  }
+		.baner-cover {
+			margin-left: 13px;
+		}
+}
+@media (min-width: 900px) {
+	.item-marathon-plus .item-dn-plus {
+		display: none;
+	}
+}
+@media(max-width: 900px) {
+		.box {
+			width: 464px;
+			height: 44vw;
+			margin-top: 20px;
+		}
+	.img-girl {
+		width: 402px;
+		height: 338px;
+		left: 40vw;
+		top: 70px;
+	}
+	.nearest-events-title {
+		margin-top: 88px;
+}
+	.nearest-events {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 309px 309px;
+		grid-template-areas: "marathon coach" 
+										"yoga yoga";
+	}
+	.marathon {
+		grid-area: marathon;
+		background-position: center center;
+	}
+	.coach {
+		grid-area: coach;
+		background-position: center center;
+		}
+	.yoga {
+		background-image: url(../images/yoga1.png);
+		grid-area: yoga;
+		background-position: center center;
+	}
+	.nearest-events-title {
+		font-size: 26px;
+	}
+	.training-schedule-title {
+		font-size: 26px;
+	}
+	.item-marathon-text, .item-coach-text, .item-yoga-text {
+		justify-content: start;
+		font-size: 12px;
+		
+	}
+	.items-dn {
+		padding: 10px 15px;
+	}
+	.training-schedule {
+		margin-top: 74px;
+	}
+	.training-schedule-top {
+		margin-bottom: 19px;
+	}
+	.training-schedule-grid {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 33.3% 33.3% 33.3%;
+		grid-template-areas: "funtraning power-mix" 
+									"body-sculpt breathing-practice"
+									" LAB complex-warmup";
+		margin-bottom: 140px;
+}
+.training-schedule-data {
+		font-size: 16px;
+}
+.training-schedule-grid-cover {
+	width: 364px;
+	height: 189px;
+}
+.funtraning-data, .body-sculpt-data, .power-mix-data, .breathing-practice-data, .LAB-data, .complex-warmup-data {
+	padding-left: 218px;
+	padding-top: 2px;
+	}
+.funtraining-img, .bodysculpt-img, .breathing-practice-img, .LAB-img, .complex-warmup-img {
+	padding-top: 0;
+}
+.powermix-img {
+	padding-top: 0px;
+	width: 67px;
+	height: 107px;
+}
+.power-mix-text {
+	padding-left: 22px;
+	padding-top: 0px;
+}
+.LAB-img, .complex-warmup-img {
+	padding-top: 20px;
+}
+.complex-warmup-text {
+	padding-top: 10px;
+}
+.about_company {
+	margin-top: 120px;
+}
+.about_company_title {
+	font-size: 30px;
+}
+.about_company_img {
+	width: 150vw;
+	height: 50vw;
+	background-repeat: no-repeat;
+	background-position: 0 center;
+}
+.about_company_items {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 43px 187px;
+	margin-bottom: 94px;
+}
+.time_saving_title, .individual_approach_title, .saving_money_title, .experienced_staff_title {
+	font-size: 16px;
+	}
+.time_saving_text, .individual_approach_text, .saving_money_text, .experienced_staff_text {
+	font-size: 16px;
+}
+.individual_approach {
+	margin-left: 0;
+}
+.saving_money {
+	margin-left: 0;
+}
+.footer {
+	margin-top: 94px;
+}
+.footer-nav {
+	gap: 30px;
+	
+}
+.footer-nav a {
+	font-size: 12px;
+}
+.footer-link-info::before {
+	width: 20px;
+	height: 20px;
+	left: -12px;
+	top: -7px;
+}
+.footer-nav-box {
+	flex-wrap: wrap;
+	gap: 40px 0px
+	}
+.footer-link-info {
+	flex-basis: 10%;
+	margin-left: 60vw;
+	font-size: 12px;
+		}
+	.footer-social-mobile {
+		gap: 28px;
+	}
+	.footer-info {
+		padding-bottom: 56px;
+		font-size: 10px;
+	}
+	.footer-link {
+		display: none;
+	}
+	.footer-text {
+		display: flex;
+	}
+	.futer-link-mobail {
+		display: flex;
+		text-decoration: none;
+		color: #2B3541;
+		opacity: 0.3;
+	}
+}
+@media(min-width: 768px) {
+	.header-burger {
+		display: none;
+	}
+}
 @media(max-width: 768px) {
-
+	nav {
+		display: none;
+		}	
+	.header-burger {
+		padding-left: 20vw;
+	}
+	.header-logo {
+		width: 78px;
+	height: 24px;
+	background-size: contain;
+	}
+	
 	.mail__bg {
 		margin-top: 94px;
 		padding-top: 0px;
 		padding-bottom: 42px;
 	}
 	.mail-box__title {
-		font-size: 26px;       
+		font-size: 26px;
 		max-width: 196px;
 		margin: 0 auto;
 		margin-top: 54px;
@@ -1276,5 +1630,180 @@ color: #2B3541;
 		width: 100%;
 		margin-top: 40px;
 	}
-	
+	.about_company_title {
+		font-size: 26px;
+	}
+	.about_company_text {
+		font-size: 16px;
+	}
+	.about_company_img {
+		width: 100vw;
+		height: 40vw;
+		background-position: center center;
+	}
+}
+@media(max-width: 650px) {
+	.text h2 {
+		margin-top: 15px;
+		}
+		.text p {
+			margin-top:  16px;
+			
+			}
+}
+@media(max-width: 600px) {
+	.header-burger {
+		padding-left: 50vw;
+	}
+	.banner-box {
+		flex-direction: column;
+	}
+	.baner-title {
+		font-size: 26px;
+	}
+	.box {
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 75vw;
+		height: 73vw;
+		margin-top: 100px;
+	}
+	.img-girl {
+		width: 80vw;
+		height: 70vw;
+		left: 0px;
+		top: 350px;
+	}
+	.Dn-btn {
+		display: none;
+	  }
+	.nearest-events-title {
+		margin-top: 50px;
+	}
+	.nearest-events-data {
+		font-size: 12px;
+	}
+	.nearest-events-items-title {
+		font-size: 16px;
+	}
+	.training-schedule-grid {
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: 16%;
+		grid-template-areas: "funtraning" 
+									"power-mix" 
+									"body-sculpt" 
+									"breathing-practice"
+									" LAB" 
+									"complex-warmup";
+	}
+	.power-mix {
+		border: 1px solid rgba(43, 53, 65, 0.5);
+		background: none;
+	box-shadow: none;
+	}
+	.grid-wrap, .pover-mix-border-box{
+		display: inline-flex;
+	}
+	.powermix-img {
+		width: 73px;
+		height: 54px;
+		margin-left: -300px;
+		padding-top: 40px;
+	}
+	.power-mix-text {
+		margin-top: 40px;
+	}
+	.training-schedule-grid-cover {
+		min-width: 250px;
+		height: 114px;
+	}
+	.funtraning-data, .body-sculpt-data, .power-mix-data, .breathing-practice-data, .LAB-data, .complex-warmup-data {
+		padding-left: 190px;
+		font-size: 14px;
+		}
+		.funtraining-img, .bodysculpt-img, .breathing-practice-img, .LAB-img, .complex-warmup-img {
+			width: 45px;
+			height: 45px;
+			padding-top: 20px;
+		}
+	.funtraning-text, .body-sculpt-text, .LAB-text, .power-mix-text, .breathing-practice-text, .complex-warmup-text {
+		padding-top: 20px;
+		font-size: 14px;
+	}
+	.about_company_items {
+		gap: 43px 100px;
+	}
+	.time_saving_title, .individual_approach_title, .saving_money_title, .experienced_staff_title {
+		font-size: 14px;
+		}
+	.time_saving_text, .individual_approach_text, .saving_money_text, .experienced_staff_text {
+		font-size: 14px;
+	}
+	.footer-nav {
+		padding-left: 0;
+		gap: 20vw;
+	}
+	.footer-link-info {
+		display: none;
+	}
+		.info-mobile {
+			display: inline-flex;
+			padding-right: 50vw;
+			margin-left: 0vw;
+	}
+	.footer-nav-box,.footer-info {
+		flex-direction: column;
+	}
+	.futer-link-mobail {
+		text-decoration: underline;
+}
+}
+@media(max-width: 560px) {
+	.about_company_img {
+	display: none;
+	}
+	.footer-nav {
+		gap: 15vw
+	}
+	.info-mobile {
+		padding-right: 40vw;
+		
+	}
+}
+@media(max-width: 450px) {
+	.about_company_items {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.footer-nav {
+		gap: 10vw
+	}
+	.info-mobile {
+		padding-right: 30vw;
+		margin-left: 0vw;
+}
+
+}
+@media(max-width: 370px) {
+	.header-burger {
+		padding-left: 60vw;
+	}
+	.text h1 {
+		font-size: 22px;
+	}
+	.training-schedule-title {
+		font-size: 22px;
+	}
+	.form__label, .form__link {
+		font-size: 8px;
+	}
+	.footer-nav {
+		gap: 7vw;
+		margin-left: -7vw;
+	}
+	.info-mobile {
+		padding-right: 20vw;
+	}
+	.footer-info {
+		font-size: 8px;
+	}
 }

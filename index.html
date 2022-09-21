@@ -11,6 +11,14 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="apple-touch-icon" sizes="192x192" href="images/favicon/android-chrome-192x192">
+	<link rel="icon" type="image/png" sizes="512x512" href="images/favicon/android-chrome-512x512">
+	<link rel="icon" sizes="16x16" href="images/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -18,6 +26,9 @@
 		<div class="container">
 			<div class="header">
 				<a href="#" class="header-logo"></a>
+				<div class="header-burger">
+					<button class="burger" onclick="openModal()"></button>
+				</div>
 				<nav>
 					<ul class="header-nav">
 						<li><a href="#">Мероприятия</a></li>
@@ -40,15 +51,17 @@
 		<div class="container">
 			<div class="banner-box">
 				<div class="text">
-					<h1 class="baner-title">онлайн тренировки любой сложности</h1>
-					<h2>&gt 15 тренировок</h2>
-					<p class="banner-text">в области спортивной <br> физиологии и нутрициологии</p>
-					<a href="#" class="banner-link">Узнать подробнее</a>
+					<h1 class="baner-title">онлайн&nbsp;тренировки любой&nbsp;сложности</h1>
+					<h2>&gt15 тренировок</h2>
+					<div class="baner-cover">
+						<p class="banner-text">в области спортивной <br> физиологии и нутрициологии</p>
+						<a href="#" class="banner-link">Узнать подробнее</a>
+					</div>
 				</div>
 				<div class="box"></div>
 				<img src="images/girl@2x.png" alt="girl" class="img-girl">
-				<a href="#nearest-events-title" class="Dn-btn"></a>
 			</div>
+			<a href="#nearest-events-title" class="Dn-btn"></a>
 		</div>
 	</div>
 	<main>
@@ -93,6 +106,9 @@
 								<div class="item-marathon-text">
 									<p class="items-dn">марафон</p>
 								</div>
+								<div class="item-marathon-plus">
+									<p class="item-dn-plus"></p>
+								</div>
 								<button class="nearest-events-btn">записаться</button>
 							</div>
 						</div>
@@ -107,6 +123,9 @@
 								<div class="item-coach-text">
 									<p class="items-dn">вебинар</p>
 								</div>
+								<div class="item-marathon-plus">
+									<p class="item-dn-plus"></p>
+								</div>
 								<button class="nearest-events-btn">записаться</button>
 							</div>
 						</div>
@@ -120,6 +139,9 @@
 								</div>
 								<div class="item-yoga-text">
 									<p class="items-dn">вебинар</p>
+								</div>
+								<div class="item-marathon-plus">
+									<p class="item-dn-plus"></p>
 								</div>
 								<button class="nearest-events-btn">записаться</button>
 							</div>
@@ -207,8 +229,8 @@
 										<p class="breathing-practice-data">25&nbsp;июня,&nbsp;11:00</p>
 										<div class="grid-wrap">
 											<img src="images/breathingpractice.svg" alt="breathingpractice"
-											class="breathing-practice-img">
-										<h3 class="breathing-practice-text">Дыхательные&nbsp;практики</h3>
+												class="breathing-practice-img">
+											<h3 class="breathing-practice-text">Дыхательные&nbsp;практики</h3>
 										</div>
 									</div>
 								</a>
@@ -232,7 +254,7 @@
 			</div>
 			</div>
 		</section>
-		<secton class="mail">
+		<section class="mail">
 			<div class="mail__bg">
 				<div class="wrapper-mail">
 					<div class="mail-box">
@@ -257,7 +279,7 @@
 					</div>
 				</div>
 			</div>
-		</secton>
+		</section>
 		<section>
 			<div class="container">
 				<div class="about_company">
@@ -346,11 +368,31 @@
 						<span>© 2020, Все права защищены</span>
 					</div>
 					<p class="footer-text">Сделано в рамках курса учебной платформы <a href="#"
-							class="footer-link">Annblok</a></p>
+							class="footer-link">Annblok</a><a href="#" class="futer-link-mobail">You Can Code</a></p>
 				</div>
 			</div>
 		</div>
 	</footer>
+	<div class="modal" id="modal">
+		<div class="modal-top">
+			<a href="#" class="header-logo"></a>
+			<button class="burger-close" onclick="closeModal()"></button>
+		</div>
+		<ul class="header-nav">
+			<li><a href="#">Мероприятия</a></li>
+			<li><a href="#">Расписание</a></li>
+			<li><a href="#">О компании</a></li>
+		</ul>
+		<div class="modal-dn"></div>
+		<ul class="social">
+			<li class="social">
+				<a href="#" target="_blank" class="social-inst"></a>
+			</li>
+			<li class="social">
+				<a href="#" target="_blank" class="social-fb"></a>
+			</li>
+		</ul>
+	</div>
 	<script src="script/Gym.js"></script>
 </body>
 
