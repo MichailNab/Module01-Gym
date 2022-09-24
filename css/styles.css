@@ -298,6 +298,7 @@ padding-top: 100px;
     bottom: 0;
     align-items: end;
 	 cursor: pointer;
+	 z-index: 1;
 	}
 .item-dn-plus {
 	background-image: url(../images/plus.png);
