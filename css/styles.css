@@ -305,7 +305,8 @@ padding-top: 100px;
 	padding: 20px 20px;
 	background-color: #2B3541;
 	margin-bottom: 0;
-	background-position: center;
+	background-position:center center;
+	align-items: end;
 }
 .training-schedule {
 	margin-top: 160px;
