@@ -96,19 +96,17 @@ a.social-fb:hover {
 	display: flex;
 	position: relative;
 	background-repeat: no-repeat;
-	margin: 0;
-	padding-top: 0;
+	gap: 40px
 }
 .box {
 	background-image: url(../images/rectangle.png);
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 464px;
+	width: 50vw;
 	height: 850px;
 	margin-top: -15px;
 }
 .text {
-	width: 676px;
 	margin-top: 185px
 }
 .baner-cover {
@@ -360,6 +358,7 @@ padding-top: 100px;
 	}
 .funtraning {
 	border: 1px solid rgba(43, 53, 65, 0.5);
+	padding: 10px;
 }
 .funtraning-item {
 	text-decoration: none;
@@ -375,7 +374,7 @@ padding-top: 100px;
 	color: #010101;
 	opacity: 0.7;
 	padding-top: 12px;
-	padding-left: 206px;
+	text-align: end;
 	}
 .funtraining-img {
 	padding-left: 30px;
@@ -393,6 +392,7 @@ padding-top: 100px;
 }
 .body-sculpt {
 	border: 1px solid rgba(43, 53, 65, 0.5);
+	padding: 10px;
 }
 .body-sculpt-item {
 	text-decoration: none;
@@ -408,7 +408,7 @@ padding-top: 100px;
 	color: #010101;
 	opacity: 0.7;
 	padding-top: 12px;
-	padding-left: 204px;
+	text-align: end;
 }
 .bodysculpt-img {
 	padding-left: 30px;
@@ -426,6 +426,7 @@ padding-top: 100px;
 }
 .LAB {
 	border: 1px solid rgba(43, 53, 65, 0.5);
+	padding: 10px;
 }
 .LAB-item {
 	text-decoration: none;
@@ -440,7 +441,7 @@ padding-top: 100px;
 	color: #010101;
 	opacity: 0.7;
 	padding-top: 12px;
-	padding-left: 209px;
+	text-align: end;
 }
 .LAB-img {
 	padding-left: 28px;
@@ -460,6 +461,7 @@ padding-top: 100px;
 	border: none;
 	background: linear-gradient(180deg, rgba(251, 241, 56, 0.7), rgba(253, 249, 182, 0.45) 100%);
 	box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2);
+	padding: 10px;
 }
 .power-mix-item {
 	text-decoration: none;
@@ -474,10 +476,10 @@ padding-top: 100px;
 	color: #010101;
 	opacity: 0.7;
 	padding-top: 12px;
-	padding-left: 206px;
+	text-align: end;
 }
 .powermix-img {
-	padding-left: 30px;
+	padding-left: 20px;
 	padding-top: 180px;
 	width: 67px;
 	height: 107px;
@@ -492,6 +494,7 @@ padding-top: 100px;
 }
 .breathing-practice {
 	border: 1px solid rgba(43, 53, 65, 0.5);
+	padding: 10px;
 }
 .breathing-practice-item {
 	text-decoration: none;
@@ -506,7 +509,7 @@ padding-top: 100px;
 	color: #010101;
 	opacity: 0.7;
 	padding-top: 9px;
-	padding-left: 211px;
+	text-align: end;
 }
 .breathing-practice-img {
 	padding-left: 29px;
@@ -524,6 +527,7 @@ padding-top: 100px;
 }
 .complex-warmup {
 	border: 1px solid rgba(43, 53, 65, 0.5);
+	padding: 10px;
 }
 .complex-warmup-item {
 	text-decoration: none;
@@ -538,7 +542,7 @@ padding-top: 100px;
 	color: #010101;
 	opacity: 0.7;
 	padding-top: 12px;
-	padding-left: 203px;
+	text-align: end;
 }
 .complex-warmup-img {
 	padding-left: 28px;
@@ -1053,30 +1057,35 @@ input[data-rule].invalid {
 
 
 /*Работа с адаптивом*/
-
-@media(max-width: 1200px) {
+@media(max-width: 1300px) {
 	.img-girl {
 		width: 790px;
 		height: 612px;
-		left: 388px;
-	}
-}
-@media(max-width: 1030px) {
-	.container {
-		max-width: 1000px;
-	}
-	.header-nav {
-		margin-left: 5px;
-			gap: 30px;
+		left: 330px;
 	}
 	
+	.text h1 {
+		font-size:40px;
+	}
+	.text h2 {
+	font-size: 36px;
+	}
+	.text p {
+		font-size: 16px;
+		}
+}
+@media(max-width: 1030px) {
+	.header-nav {
+		margin-left: 5px;
+		gap: 30px;
+	}	
 	.box {
 		height: 55vw;
 	}
 	.img-girl {
 		width: 530px;
 		height: 489px;
-		left: 433px;
+		left: 343px;
 	}
 	.text {
 		margin-top: 0;
@@ -1089,8 +1098,8 @@ input[data-rule].invalid {
 		top: 116px;
 	}
 	.text h2 {
-	font-size: 26px;
-	margin-top: 35px;
+		font-size: 26px;
+		margin-top: 35px;
 	}
 	.text p {
 		font-size: 16px;
@@ -1112,15 +1121,15 @@ input[data-rule].invalid {
 	}
 }
 @media(max-width: 900px) {
-		.box {
-			width: 464px;
-			height: 44vw;
-			margin-top: 20px;
-		}
+	.box {
+		width: 464px;
+		height: 44vw;
+		margin-top: 20px;
+	}
 	.img-girl {
-		width: 402px;
-		height: 338px;
-		left: 40vw;
+		width: 52vw;
+		height: 46vw;
+		left: 300px;
 		top: 70px;
 	}
 	.nearest-events-title {
@@ -1182,21 +1191,13 @@ input[data-rule].invalid {
 	width: 364px;
 	height: 189px;
 }
-.funtraning-data, .body-sculpt-data, .power-mix-data, .breathing-practice-data, .LAB-data, .complex-warmup-data {
-	padding-left: 218px;
-	padding-top: 2px;
-	}
 .funtraining-img, .bodysculpt-img, .breathing-practice-img, .LAB-img, .complex-warmup-img {
 	padding-top: 0;
 }
 .powermix-img {
 	padding-top: 0px;
-	width: 67px;
-	height: 107px;
-}
-.power-mix-text {
-	padding-left: 22px;
-	padding-top: 0px;
+	width: 62px;
+	height: 100px;
 }
 .LAB-img, .complex-warmup-img {
 	padding-top: 20px;
@@ -1363,14 +1364,13 @@ input[data-rule].invalid {
 		background-position: center center;
 	}
 }
-@media(max-width: 650px) {
+@media(max-width: 670px) {
 	.text h2 {
-		margin-top: 15px;
-		}
-		.text p {
-			margin-top:  16px;
-			
-			}
+		margin-top: 12px;
+	}
+	.text p {
+		margin-top:  16px;
+	}
 }
 @media(max-width: 600px) {
 	.header-burger {
@@ -1383,17 +1383,16 @@ input[data-rule].invalid {
 		font-size: 26px;
 	}
 	.box {
-		background-repeat: no-repeat;
-		background-size: cover;
-		width: 75vw;
-		height: 73vw;
-		margin-top: 100px;
+		width: 60vw;
+		height: 65vw;
+		margin-top: 50px;
+		gap: 0px;
 	}
 	.img-girl {
-		width: 80vw;
-		height: 70vw;
+		width:70vw;
+		height: 60vw;
 		left: 0px;
-		top: 350px;
+		top: 380px;
 	}
 	.Dn-btn {
 		display: none;
@@ -1422,31 +1421,27 @@ input[data-rule].invalid {
 		background: none;
 	box-shadow: none;
 	}
-	.grid-wrap, .pover-mix-border-box{
+	.grid-wrap {
 		display: inline-flex;
 	}
+
 	.powermix-img {
-		width: 73px;
-		height: 54px;
-		margin-left: -300px;
-		padding-top: 40px;
-	}
-	.power-mix-text {
-		margin-top: 40px;
-	}
-	.training-schedule-grid-cover {
+		width: 34px;
+		height: 53px;
+		padding-top: 10px;
+		}
+		.training-schedule-grid-cover {
 		min-width: 250px;
 		height: 114px;
 	}
 	.funtraning-data, .body-sculpt-data, .power-mix-data, .breathing-practice-data, .LAB-data, .complex-warmup-data {
-		padding-left: 190px;
 		font-size: 14px;
 		}
-		.funtraining-img, .bodysculpt-img, .breathing-practice-img, .LAB-img, .complex-warmup-img {
-			width: 45px;
-			height: 45px;
-			padding-top: 20px;
-		}
+	.funtraining-img, .bodysculpt-img, .breathing-practice-img, .LAB-img, .complex-warmup-img {
+		width: 45px;
+		height: 45px;
+		padding-top: 20px;
+	}
 	.funtraning-text, .body-sculpt-text, .LAB-text, .power-mix-text, .breathing-practice-text, .complex-warmup-text {
 		padding-top: 20px;
 		font-size: 14px;
@@ -1514,6 +1509,9 @@ input[data-rule].invalid {
 	.text h1 {
 		font-size: 22px;
 	}
+	.text h2 {
+		font-size: 20px;
+		}
 	.training-schedule-title {
 		font-size: 22px;
 	}
