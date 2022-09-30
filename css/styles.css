@@ -96,14 +96,14 @@ a.social-fb:hover {
 	display: flex;
 	position: relative;
 	background-repeat: no-repeat;
-	gap: 40px
-}
+	gap: 20px;
+	}
 .box {
 	background-image: url(../images/rectangle.png);
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 50vw;
-	height: 850px;
+	width: 84vw;
+	height: 830px;
 	margin-top: -15px;
 }
 .text {
@@ -132,7 +132,7 @@ margin-bottom: 58px;
 }
 .img-girl {
 	position: absolute;
-	width: 990px;
+	width: 980px;
 	height: 812px;
 	left: 320px;
 	top: 25px;
@@ -198,7 +198,7 @@ padding-top: 100px;
 	background-image: url(../images/marathon.png);
 	background-size:cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center 0;
 }
 .coach {
 	position: absolute;
@@ -209,7 +209,7 @@ padding-top: 100px;
 	background-image: url(../images/trainer.png);
 	background-size:cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center 0;
 }
 .yoga {
 	position: absolute;
@@ -391,7 +391,7 @@ padding-top: 100px;
 	background-size:cover;
 	}
 .bodysculpt-img {
-	padding-left: 30px;
+	padding-left: 5vw;
 	padding-top: 230px;
 	width: 42px;
 	height: 85px;
@@ -936,11 +936,10 @@ input[data-rule].invalid {
 
 
 /*Работа с адаптивом*/
-@media(max-width: 1300px) {
+@media(max-width: 1400px) {
 	.img-girl {
-		width: 790px;
-		height: 612px;
-		left: 330px;
+		width: 65vw;
+		height: 55vw;
 	}
 	
 	.text h1 {
@@ -954,17 +953,21 @@ input[data-rule].invalid {
 		}
 }
 @media(max-width: 1030px) {
+	.container {
+		margin: 0;
+	}
 	.header-nav {
 		margin-left: 5px;
 		gap: 30px;
 	}	
-	.box {
-		height: 55vw;
+.box {
+		width: 50vw;
+		height: 50vw;
 	}
 	.img-girl {
-		width: 530px;
-		height: 489px;
-		left: 380px;
+		width: 48vw;
+		height: 43vw;
+		left: 350px;
 	}
 	.text {
 		margin-top: 0;
@@ -994,6 +997,12 @@ input[data-rule].invalid {
 			margin-left: 13px;
 		}
 }
+@media(max-width: 970px) {
+.card-text {
+	font-size: 16px;
+	padding-left: 2vw;
+}
+}
 @media (min-width: 900px) {
 	.item-marathon-plus .item-dn-plus {
 		display: none;
@@ -1001,18 +1010,18 @@ input[data-rule].invalid {
 }
 @media(max-width: 900px) {
 	.box {
-		width: 464px;
-		height: 44vw;
+		width: 37vw;
+		height: 52vw;
 		margin-top: 20px;
 	}
 	.img-girl {
-		width: 52vw;
-		height: 46vw;
+		width: 50vw;
+		height: 40vw;
 		left: 330px;
 		top: 70px;
 	}
 	.nearest-events-title {
-		margin-top: 88px;
+		margin-top: 60px;
 }
 	.nearest-events {
 		grid-template-columns: repeat(2, 1fr);
@@ -1068,7 +1077,7 @@ input[data-rule].invalid {
 		font-size: 16px;
 }
 .training-schedule-grid-cover {
-	width: 364px;
+	width: 100%;
 	height: 220px;
 }
 .funtraining-img, .bodysculpt-img, .breathing-practice-img, .LAB-img, .complex-warmup-img {
@@ -1171,7 +1180,25 @@ input[data-rule].invalid {
 	height: 24px;
 	background-size: contain;
 	}
+	.text h1 {
+		font-size: 24px;
+		}
+	.text h2 {
+		font-size: 23px;
 	
+	}
+	.text p {
+		font-size: 14px;
+		}
+		.box {
+		height: 41vw;
+		margin-left: -5vw;
+		}
+	.img-girl {
+		width:44vw;
+		height:34vw;
+		left: 45vw;
+	}
 	.mail__bg {
 		margin-top: 94px;
 		padding-top: 0px;
@@ -1203,7 +1230,6 @@ input[data-rule].invalid {
 	.about__description {
 		margin-top: 96px;
 	}
-	
 	.form {
 		flex-direction: column;
 	}
@@ -1226,16 +1252,20 @@ input[data-rule].invalid {
 		width: 100%;
 		margin-top: 40px;
 	}
+	.about_company_main {
+	gap: 40px;
+	}
 	.about_company_title {
-		font-size: 26px;
+		font-size: 24px;
 	}
 	.about_company_text {
-		font-size: 16px;
+		font-size: 14px;
 	}
 	.about_company_img {
-		width: 100vw;
-		height: 40vw;
-		background-position: center center;
+		width: 100%;
+		height: 50vw;
+		background-position:top;
+		
 	}
 }
 @media(max-width: 670px) {
@@ -1244,6 +1274,9 @@ input[data-rule].invalid {
 	}
 	.text p {
 		margin-top:  12px;
+	}
+	.card-text {
+		font-size: 14px;
 	}
 }
 @media(max-width: 600px) {
@@ -1266,10 +1299,9 @@ input[data-rule].invalid {
 		width: 100%;
 		}
 	.box {
-		width: 60vw;
-		height: 65vw;
-		margin-top: 50px;
-		gap: 0px;
+		width: 100%;
+		height: 66vw;
+		margin-top: 20vw;
 	}
 	.img-girl {
 			width:100%;
@@ -1279,7 +1311,7 @@ input[data-rule].invalid {
 	}
 	.Dn-btn {
 		display: none;
-	  }
+	}
 	.nearest-events {
 		gap: 10px;
 	}
@@ -1292,6 +1324,10 @@ input[data-rule].invalid {
 	.nearest-events-items-title {
 		font-size: 16px;
 	}
+	.nearest-events-btn {
+		display: none;
+	}
+
 	.training-schedule-grid {
 		grid-template-columns: repeat(1, 1fr);
 		grid-template-rows: 16%;
@@ -1328,9 +1364,6 @@ input[data-rule].invalid {
 		height: 45px;
 		align-self: center;
 	}
-	.card-text {
-		font-size: 14px;
-	}
 	.about_company_items {
 		gap: 43px 100px;
 	}
@@ -1360,6 +1393,9 @@ input[data-rule].invalid {
 }
 }
 @media(max-width: 560px) {
+	.item-marathon-table, .item-coach-table, .item-yoga-table {
+		padding-left: 14px;
+	}
 		.about_company_img {
 	display: none;
 	}
@@ -1372,8 +1408,15 @@ input[data-rule].invalid {
 	}
 }
 @media(max-width: 450px) {
+	.box {
+		height: 81vw;
+	}
 	.yoga {
 		background-image: url(../images/yoga2.png);
+	}
+	.card-text {
+		font-size: 12px;
+		padding-left: 3vw;
 	}
 	.about_company_items {
 		grid-template-columns: repeat(1, 1fr);
@@ -1392,13 +1435,19 @@ input[data-rule].invalid {
 		padding-left: 60vw;
 	}
 	.text h1 {
-		font-size: 22px;
+		font-size: 20px;
 	}
 	.text h2 {
-		font-size: 20px;
+		font-size: 18px;
 		}
+	.nearest-events-title {
+		font-size: 20px;
+	}
+	.nearest-events-items-title {
+		font-size: 14px;
+	}
 	.training-schedule-title {
-		font-size: 22px;
+		font-size: 20px;
 	}
 	.form__label, .form__link {
 		font-size: 8px;
