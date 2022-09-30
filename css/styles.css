@@ -937,6 +937,9 @@ input[data-rule].invalid {
 
 /*Работа с адаптивом*/
 @media(max-width: 1400px) {
+	.box {
+		height: 55vw;
+	}
 	.img-girl {
 		width: 65vw;
 		height: 55vw;
@@ -1022,6 +1025,7 @@ input[data-rule].invalid {
 	}
 	.nearest-events-title {
 		margin-top: 60px;
+		padding-top: 10vw;
 }
 	.nearest-events {
 		grid-template-columns: repeat(2, 1fr);
@@ -1410,6 +1414,9 @@ input[data-rule].invalid {
 @media(max-width: 450px) {
 	.box {
 		height: 81vw;
+	}
+	.nearest-events-title {
+		margin-top: 5vw;
 	}
 	.yoga {
 		background-image: url(../images/yoga2.png);
