@@ -640,10 +640,10 @@ input[data-rule].invalid {
 }
 .about_company_main {
 	display: flex;
-	gap: 70px;
+	gap: 77px;
 }
 .about_company_content {
-	width: 483px;
+	width: 100%;
 	}
 .about_company_title {
 	font-weight: 700;
@@ -683,10 +683,18 @@ input[data-rule].invalid {
 	color: #FBF138;
 }
 .about_company_img {
-	background-image: url(../images/aboutcompany.png);
-	width: 581px;
+	width: 100%;
 	height: 336px;
-	background-position: center center;
+	position: relative;
+	overflow: hidden;
+}
+.about_company_img img {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+	width: 100%;
 }
 .about_company_items {
 	display: flex;
@@ -1001,6 +1009,9 @@ input[data-rule].invalid {
 	.nearest-events-title {
 		margin-top: 8vw;
 	}
+	.about_company_img {
+		width: 100%;
+}
 }
 @media(max-width: 970px) {
 .card-text {
@@ -1101,10 +1112,8 @@ input[data-rule].invalid {
 	font-size: 30px;
 }
 .about_company_img {
-	width: 150vw;
-	height: 50vw;
+	width: 100%;
 	background-repeat: no-repeat;
-	background-position: 0 center;
 }
 .about_company_items {
 	display: grid;
@@ -1262,19 +1271,15 @@ input[data-rule].invalid {
 		margin-top: 40px;
 	}
 	.about_company_main {
-	gap: 40px;
+	gap: 36px;
 	}
 	.about_company_title {
 		font-size: 24px;
+		margin-bottom: 16px;
 	}
 	.about_company_text {
 		font-size: 14px;
-	}
-	.about_company_img {
-		width: 100%;
-		height: 50vw;
-		background-position:top;
-		
+		margin-bottom: 34px;
 	}
 }
 @media(max-width: 670px) {
@@ -1417,6 +1422,9 @@ input[data-rule].invalid {
 @media(max-width: 560px) {
 	.item-marathon-table, .item-coach-table, .item-yoga-table {
 		padding-left: 14px;
+	}
+	.about_company_text {
+		font-size: 16px;
 	}
 	.about_company_img {
 		display: none;
